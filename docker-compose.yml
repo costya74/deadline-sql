@@ -11,13 +11,13 @@ services:
       - MYSQL_DATABASE=app
       - MYSQL_USER=app
       - MYSQL_PASSWORD=pass
-  postgresdb:
-    image: postgres:12-alpine
-    ports:
-      - '5432:5432'
-    volumes:
-      - ./initdb:/docker-entrypoint-initdb.d
-    environment:
-      - POSTGRES_DB=app
-      - POSTGRES_USER=app
-      - POSTGRES_PASSWORD=pass
+#  postgresdb:
+#    image: postgres:12-alpine
+#    ports:
+#      - '5432:5432'
+#    volumes:
+#      - ./initdb:/docker-entrypoint-initdb.d
+#    environment:
+#      - POSTGRES_DB=app
+#      - POSTGRES_USER=app
+#      - POSTGRES_PASSWORD=pass
